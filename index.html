@@ -59,6 +59,14 @@
             border-top: 1px solid #ccc;
             color: #333;
         }
+        .contact-flex {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .contact-flex span {
+            min-width: 200px;
+        }
     </style>
 </head>
 <body>
@@ -104,11 +112,17 @@
 
     <footer>
         <p><strong>Contact:</strong> Ramnath KM</p>
-        <p>Email: <a href="mailto:kmramn@yahoo.com">kmramn@yahoo.com</a>, <a href="mailto:kmramna@gmail.com">kmramna@gmail.com</a></p>
-        <p>Phone: +91 93458 50071</p>
-        <p>WhatsApp / Signal: +91 94458 48271</p>
-        <p>Profile Video: <a href="https://www.youtube.com/watch?v=Ush2pVfJz9I" target="_blank">Watch on YouTube</a></p>
-        <p>Technical Channel: <a href="https://www.youtube.com/@ramnathkm107" target="_blank">@ramnathkm107</a></p>
+        <div class="contact-flex" style="display: flex; flex-wrap: wrap; gap: 20px; font-style: italic; font-size: 0.95em;">
+            <span>
+                Email:
+                <a href="mailto:kmramn@yahoo.com" style="margin-right: 5px;">kmramn@yahoo.com</a>
+                <a href="mailto:kmramna@gmail.com">kmramna@gmail.com</a>
+            </span>
+            <span>Phone: +91 93458 50071</span>
+            <span>WhatsApp / Signal: +91 94458 48271</span>
+            <span>Profile Video: <a href="https://www.youtube.com/watch?v=Ush2pVfJz9I" target="_blank">YouTube</a></span>
+            <span>C++ YouTube Technical Channel: <a href="https://www.youtube.com/@ramnathkm107" target="_blank">@ramnathkm107</a></span>
+        </div>
     </footer>
 </body>
 </html>
