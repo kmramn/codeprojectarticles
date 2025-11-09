@@ -93,12 +93,12 @@
   <main>
     <h2>My Published Articles</h2>
 
-    <div class="article">
+    <div class="article non-crypto-link">
       <a href="https://www.codeproject.com/articles/Cplusplus-Simple-BOOST-Asynchronous-ASIO-Reverse-P#comments-section" target="_blank">C++ Simple BOOST Asynchronous ASIO Reverse Proxy</a>
       <p class="description">A reverse proxy developed using BOOST 1.75 asynchronous ASIO calls. It acts as a bridge between the client and server, facilitating communication.</p>
     </div>
 
-    <div class="article">
+    <div class="article non-crypto-link">
       <a href="https://www.codeproject.com/articles/Inject-DLL-in-Another-Process-using-Cplusplus-Win3#comments-section" target="_blank">Inject DLL in Another Process using C++ Win32</a>
       <p class="description">Explains DLL injection using C++ and Win32 Windows API. This technique has both useful applications and potential security risks.</p>
     </div>
@@ -144,5 +144,12 @@
       <span>HackerRank: <a href="https://www.hackerrank.com/kmramn" target="_blank">hackerrank.com/kmramn</a></span>
     </div>
   </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("group") === "true") {
+      document.querySelectorAll(".non-crypto-link").forEach(el => el.style.display = "none");
+    }
+  </script>
 </body>
 </html>
