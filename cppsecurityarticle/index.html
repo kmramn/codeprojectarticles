@@ -1,39 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>C++ & Security Articles</title>
+
+  <!-- ✅ Open Graph Meta Tags for WhatsApp Preview -->
+  <meta property="og:title" content="C++ Security Articles by Ramnath KM" />
+  <meta property="og:description" content="Explore hands-on C++ cryptography, RSA breaking, AES attacks, and AI-powered security systems." />
+  <meta property="og:image" content="https://kmramn.github.io/codeprojectarticles/codeproject-logo.png" />
+  <meta property="og:url" content="https://kmramn.github.io/codeprojectarticles/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 40px;
-      background-color: #f9f9f9;
-      color: #333;
+      margin: 20px;
+      padding: 20px;
+      background-color: #f4f4f4;
     }
-    h1 {
-      color: #2c3e50;
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #FF9900;
+      padding: 10px;
+      margin-bottom: 20px;
     }
-    h2 {
-      margin-top: 30px;
-      color: #34495e;
+    header img {
+      width: 150px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      flex-grow: 1;
+      text-align: center;
+    }
+    a {
+      display: inline-block;
+      margin: 5px 0;
+      color: #0078d7;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .description {
+      margin-bottom: 20px;
+    }
+    .article {
+      background-color: #ffffff;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .highlight {
+      background-color: #fff8e1;
+      border: 2px solid #ffcc00;
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 8px;
+    }
+    .highlight h2 {
+      color: #cc6600;
+      margin-top: 0;
     }
     footer {
-      margin-top: 50px;
-      padding-top: 10px;
+      font-style: italic;
+      font-size: 0.95em;
+      margin-top: 40px;
+      padding-top: 20px;
       border-top: 1px solid #ccc;
-      font-size: 0.9em;
-      color: #555;
+      color: #333;
+    }
+    .contact-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .contact-flex span {
+      min-width: 200px;
     }
   </style>
 </head>
 <body>
-  <h1>C++ & Security Articles</h1>
+  <header>
+    <img src="codeproject-logo.png" alt="CodeProject Logo" />
+    <h1>CodeProject Articles</h1>
+  </header>
 
-  <h2>My Published Articles</h2>
-  <p>No links yet — content will be added later.</p>
+  <main>
+    <h2>My Published Articles</h2>
+
+    <div class="highlight">
+      <h2>My LinkedIn Technical Articles</h2>
+      <div class="article">
+        <a href="https://www.linkedin.com/in/ramnathkmcppdatasecurity/recent-activity/articles/" target="_blank">View all LinkedIn articles</a>
+        <p class="description">Includes AI-powered C++ security systems, DLP implementation using MPIP SDK, RESTful services with Casablanca SDK, and cryptographic attack simulations. These articles showcase hands-on engineering and secure architecture design.</p>
+      </div>
+    </div>
+  </main>
 
   <footer>
-    My LinkedIn Technical Articles
+    <p><strong>Contact:</strong> Ramnath KM</p>
+    <div class="contact-flex">
+      <span>Email: <a href="mailto:kmramn@yahoo.com">kmramn@yahoo.com</a>, <a href="mailto:kmramna@gmail.com">kmramna@gmail.com</a></span>
+      <span>Phone: +91 93458 50071</span>
+      <span>WhatsApp / Signal: +91 94458 48271</span>
+      <span>Profile Video: <a href="https://www.youtube.com/watch?v=Ush2pVfJz9I" target="_blank">YouTube</a></span>
+      <span>C++ YouTube Technical Channel: <a href="https://www.youtube.com/@ramnathkm107" target="_blank">@ramnathkm107</a></span>
+      <span>Codeforces: <a href="https://codeforces.com/profile/kmramn" target="_blank">codeforces.com/profile/kmramn</a></span>
+      <span>HackerRank: <a href="https://www.hackerrank.com/kmramn" target="_blank">hackerrank.com/kmramn</a></span>
+    </div>
   </footer>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("group") === "true") {
+      document.querySelectorAll(".non-crypto-link").forEach(el => el.style.display = "none");
+    }
+  </script>
 </body>
 </html>
